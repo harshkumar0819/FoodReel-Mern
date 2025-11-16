@@ -1,0 +1,89 @@
+@import './variables.css';
+
+.cf-page{
+  padding:12px;
+  display:flex;
+  justify-content:center;
+  background:var(--bg);
+}
+
+.cf-card{
+  width:100%;
+  max-width:640px;
+  background:var(--panel);
+  border:1px solid var(--panel-contrast);
+  border-radius:12px;
+  box-shadow:var(--shadow);
+  padding:16px;
+}
+
+.cf-header{ margin-bottom:12px }
+.cf-title{ font-size:18px; margin:0 0 6px 0; color:var(--text) }
+.cf-sub{ margin:0; font-size:13px; color:var(--muted) }
+
+.cf-form{ display:grid; gap:12px }
+
+.field{ display:flex; flex-direction:column; gap:8px }
+.field label{ font-size:13px; color:var(--muted) }
+
+.input{
+  appearance:none;
+  border:1px solid var(--input-border);
+  background:var(--input-bg);
+  color:var(--input-text, var(--text));
+  padding:10px 12px;
+  border-radius:8px;
+  outline:none;
+  font-size:14px;
+}
+
+.input:focus{ box-shadow:0 0 0 4px rgba(37,99,235,0.12); border-color:var(--accent) }
+
+.textarea{ min-height:80px; resize:vertical }
+
+.cf-preview{ margin-top:8px; display:flex; justify-content:center }
+.cf-preview video{ width:100%; max-width:420px; border-radius:8px; background:#000 }
+
+.actions{ display:flex; gap:10px; align-items:center }
+
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:10px 14px; border-radius:10px; font-weight:600; cursor:pointer; border:none }
+.btn-primary{ background:var(--accent); color:var(--accent-contrast) }
+.btn-ghost{ background:transparent; color:var(--muted); border:1px solid transparent }
+
+@media (min-width:720px){
+  .cf-card{ padding:20px }
+  .cf-form{ gap:14px }
+}
+
+.file-input-wrapper{ display:flex; flex-direction:column; gap:8px }
+.file-input{ display:none }
+.file-btn{
+  display:inline-flex;
+  gap:10px;
+  align-items:center;
+  padding:10px 12px;
+  border-radius:8px;
+  background:var(--panel-contrast);
+  border:1px solid var(--input-border);
+  color:var(--text);
+  cursor:pointer;
+  font-weight:600;
+}
+.file-btn svg{ flex:0 0 18px; color:var(--accent) }
+.file-label-text{ font-size:14px; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:220px }
+.file-btn:hover{ box-shadow:0 6px 18px rgba(37,99,235,0.06) }
+
+
+.cf-warning{
+  display:flex;
+  gap:8px;
+  align-items:flex-start;
+  padding:10px 12px;
+  border-radius:8px;
+  background:rgba(239,68,68,0.1);
+  border:1px solid rgba(239,68,68,0.3);
+  color:#dc2626;
+  font-size:13px;
+}
+.cf-warning svg{ flex:0 0 16px; margin-top:1px }
+
