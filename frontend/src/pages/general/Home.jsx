@@ -274,15 +274,15 @@ const Home = () => {
           <svg viewBox="0 0 100 100" width="36" height="36" aria-hidden="true" className="app-logo">
             <defs>
               <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ff7a18" />
-                <stop offset="50%" stopColor="#af0" />
-                <stop offset="100%" stopColor="#6a5cff" />
+                <stop offset="0%" stopColor="#1c1721ff" />
+                <stop offset="50%" stopColor="rgba(0, 255, 213, 1)" />
+                <stop offset="100%" stopColor="#5c6affff" />
               </linearGradient>
             </defs>
             <circle cx="50" cy="50" r="46" fill="url(#g1)" />
             <path d="M30 55c5-10 20-18 30-10 12 10-2 32-18 36-18-6-22-22-12-26z" fill="#fff" opacity="0.95" />
           </svg>
-          <span className="nav-label">Reels</span>
+          <span className="nav-label">FoodCap</span>
         </Link>
 
         <Link to="/saved" className="nav-item" aria-label="Saved">

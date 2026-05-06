@@ -4,7 +4,7 @@ const ReelFeed = ({ items, emptyMessage }) => {
   const videoRefs = useRef(new Map())
   const containerRef = useRef(null)
 
-  // Helper to set/clear video refs
+ 
   const setVideoRef = (id) => (el) => {
     if (!el) {
       videoRefs.current.delete(id)
@@ -13,7 +13,7 @@ const ReelFeed = ({ items, emptyMessage }) => {
     videoRefs.current.set(id, el)
   }
 
-  // IntersectionObserver for auto-play/pause
+ 
   useEffect(() => {
     const options = { root: null, rootMargin: '0px', threshold: 0.6 }
     const observer = new IntersectionObserver((entries) => {

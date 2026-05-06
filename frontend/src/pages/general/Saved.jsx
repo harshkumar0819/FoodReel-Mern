@@ -62,9 +62,15 @@ const Saved = () => {
 
       <nav className="bottom-nav">
         <Link to="/" className="nav-item">
+         <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+            <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.5z" />
+          </svg>
           <span>Home</span>
         </Link>
         <Link to="/saved" className="nav-item active">
+         <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+            <path d="M6 2h10a2 2 0 0 1 2 2v18l-7-3-7 3V4a2 2 0 0 1 2-2z" />
+          </svg>
           <span>Saved</span>
         </Link>
       </nav>
